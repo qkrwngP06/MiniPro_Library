@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+img{
+    border:  0;
+    vertical-align: top;
+}
+.section {
+    max-width: 1280px;
+    /* height: 755px; */
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#wrap{
+    overflow: hidden;
+    position: relative;
+    height: 1675px;
+}
+/*=============header시작==============*/
+#header{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid black;
+}
+
+#header #tnbWrap{
+    height: 40px;
+    text-align: right;
+}
+
+
+#header #tnbWrap .section .util li {
+    display: inline-block;
+    font: 13px/40px 'Nanum Gothic';
+    font-weight: bold;
+    color: #202020;
+    padding-left: 26px;
+    top: 5px;
+    position: relative;
+}
+
+#header #gnbWrap {
+    width: 100%;
+    height: 80px;
+    font-size: 0;
+    margin: 0 auto;
+}
+#header #gnbWrap .section {
+    position: static;
+    height: 93px;
+}
+#header #gnbWrap h1 {
+    position: absolute;
+    font-size: 0;
+    top: 37px;
+}
+#header #gnbWrap .g-menu{
+    width: 100%;
+    height: 93px; 
+    text-align: right;
+}
+#header #gnbWrap .g-menu .gnbMenu {
+    display: inline-block;
+    vertical-align: middle;
+    font: 16px '나눔고딕';
+    font-weight: normal;
+    color: #000;
+}
+#header #gnbWrap .g-menu .gnbMenu > li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    padding: 32px 0 32px 80px;
+    box-sizing: border-box;
+}
+.gnbMenu a {
+    text-align: right;
+    display: inline-block;
+    padding: 3px;
+    font-weight: 600;
+    font-size: 20px;
+}
+/*================header끝=================*/
+
+/*===============Container 중간부분===========*/
+#Container { /*나중에 사이즈 조정하기*/
+    min-width: 1280px;
+    height: 1165px;
+}
+#Container .visual {
+    background: url(../../img/bg_visual.jpg) no-repeat 50% 0;
+    height: 410px;
+    background-size: cover;
+    position: relative;
+}
+#Container .visual h2 {
+    position: absolute;
+    width: 349px;
+    height: 115px;
+    font-size: 0;
+    left: 50%;
+    margin-left: -174.5px;
+    top: 105px;
+    background: url(../../img/bg_visual_txt.png.jpg.png) no-repeat 50% 0;
+    margin-left: 175px;
+}
+#Container .visual .search {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    font-size: 0;
+    bottom: 0;
+    background: #a9b7c0;
+}
+.search {
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    background: #f6f6f6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.search form {
+    display: block;
+    height: 67px;
+}
+#Container .visual .search .srchBox {
+    width: 914px;
+    height: 67px;
+    margin: 17px auto 0;
+    font: 16px/18px 'Nanum Gothic';
+    color: #fff;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+    background: #0072bc;
+}
+#Container .visual .search .srchBox label {
+    display: inline-block;
+    padding-right: 16px;
+}
+.search label {
+    font-weight: 800;
+    background: url(../../img/search-bar.gif) no-repeat right center;
+    /* display: inline-block;
+    padding-right: 10px; */
+    margin-right: 9px;
+}
+#Container .visual .search .srchBox label input {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+    margin: 2px 6px 0 0;
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+#Container .visual .search .srchBox .srch {
+    display: inline-block;
+    width: 624px;
+    height: 42px;
+    padding-right: 156px;
+    position: relative;
+    box-sizing: border-box;
+}
+#Container .visual .search .srchBox .srch input {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: 800;
+    letter-spacing: 0;
+    padding: 0 15px;
+    border: 0;
+    box-sizing: border-box;
+}
+#Container .visual .search .srchBox .srch .btn-link-srch {
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    top: 0;
+    right: 0;
+    font: 18px/42px 'Nanum Gothic';
+    color: #0072bc;
+    text-align: center;
+    font-weight: bold;
+    background: #fff;
+}
+#Container .content {
+    background: url(../../img/bg_content.gif) repeat-x 0 0;
+    height: 755px;
+
+}
+#Container .content .section {
+    overflow: hidden;
+}
+#Container .content .section .link {
+    overflow: hidden;
+    width: 1280px;
+    height: 130px;
+    margin: 0 auto;
+}
+#Container .content .section .link li {
+    float: left;
+    width: 106px;
+    height: 130px;
+    font-size: 13px;
+    color: #686868;
+    font-weight: bold;
+    text-align: center;
+}
+#Container .content .section .link li a {
+    display: block;
+    width: 100%;
+    height: 90px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* 신착도서 사서추천도서 대출베스트*/
+#Container .content .section .book-list {
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding-left: 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+#Container .content .section .book-list .tit {
+    color: #fff;
+    border: 0;
+}
+#Container .tit {
+    font: 18px/20px 'Nanum Barun Gothic';
+    overflow: hidden;
+    margin-bottom: 26px;
+    padding: 20px 0 8px;
+    border-bottom: 1px solid #3793e5;
+}
+#Container .tab .active {
+    color: #0072bc;
+    display: block;
+}
+#Container .tit li {
+    float: left;
+    padding-right: 30px;
+    letter-spacing: 0;
+}
+#Container .tab .cont ul{
+    /* display: none; */
+    width: 560px;
+    height: 181px;
+}
+#Container .content .section .book-list .cont li {
+    display: inline-block;
+    width: 125px;
+    height: 181px;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 15px;
+}
+span.bookKind {
+    position: absolute;
+    display: block;
+    background: url(../../img/mainTabcontents_bg03.png);
+    background-size: 100%;
+    z-index: 100;
+    width: 36px;
+    height: 37px;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 5px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#Container .content .section .book-list .cont li span.img {
+    display: inline-block;
+    width: 125px;
+    height: 179px;
+}
+#Container .content .section .book-list .cont li span.img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#Container .content .section .book-list .btn-link-more {
+    right: 107px;
+}
+#Container .btn-link-more {
+    position: absolute;
+    font-size: 0;
+    top: 13px;
+    right: 1px;
+}
+#Container .btn-link-more i {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #0072bc;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+#Container .content .section .banner {
+    float: left;
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#Container .content .section .notice {
+    float: left;
+    width: 457px;
+    height: 290px;
+    margin: 0 49px 35px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* =========================== 공지사항 =====================*/
+#Container .content .section .notice .cont {
+    height: 215px;
+    font-size: 14px;
+    line-height: 16px;
+}
+#Container .tab .cont[data-tab='tab1'] {
+    display: block;
+}
+#Container .content .section .notice .cont li {
+    overflow: hidden;
+    padding-bottom: 24px;
+}
+#Container .content .section .notice .cont li a {
+    display: inline-block;
+    width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ==================행사 안내 =============*/
+#Container .content .section .promotion {
+    float: left;
+    width: 350px;
+    height: 275px;
+    margin: 0 49px 35px 0;
+    position: relative;
+}
+#Container .content .section .promotion .cont ul {
+    width: 350px;
+    height: 200px;
+}
+#Container .content .section .promotion .cont li {
+    display: inline-block;
+    width: 129px;
+    height: 200px;
+    font: 12px/18px 'Nanum Gothic';
+    color: #555;
+    text-align: left;
+    vertical-align: top;
+    padding: 0 15px;
+}
+#Container .content .section .promotion .cont li a .img {
+    width: 129px;
+}
+#Container .content .section .promotion .cont li a > * {
+    display: block;
+}
+#Container .content .section .promotion .cont li a strong {
+    font-size: 14px;
+    color: #282828;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* ================= 달력 ================= */
+#Container .content .section .calender {
+    float: left;
+    width: 375px;
+    margin: 0 0 35px;
+    position: relative;
+}
+
+/*===================footer================*/
+#footer .info {
+    /* height: 80px; */
+    color: #282828;
+    font-weight: bold;
+    border-top: 1px solid #666;
+    background: #f6f6f6;
+}
+#footer .info ul {
+    width: 772px;
+    height: 80px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+#footer .info ul li {
+    float: left;
+    line-height: 80px;
+    padding-left: 27px;
+}
+#footer select {
+    position: absolute;
+    width: 215px;
+    height: 36px;
+    top: 22px;
+    right: 0;
+    padding: 0 10px;
+    background: #fff;
+}
+
+/*============== 광고 배너 ===================*/
+#footer .siteLink .section {
+    width: 1280px;
+    border-bottom: 1px solid #dadada;
+}
+#footer .siteLink ul {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 16px 0 20px;
+}
+#footer .siteLink ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 44px;
+}
+#footer .siteLink .btn-link-more {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 7px;
+    background: #3a3a3a;
+}
+#footer .address {
+    width: 630px;
+    height: 72px;
+    font-size: 12px;
+    color: #747474;
+    text-align: center;
+    padding: 45px 0 37px 0;
+    margin: 0 340px;
+}
+#footer .address dl:nth-child(1) {
+    width: 100%;
+}
+#footer .address dl {
+    display: inline-block;
+    padding: 0 8px 8px 0;
+}
+#footer .address dl dt, #footer .address dl dd {
+    display: inline-block;
+    letter-spacing: -0.5px;
+}
