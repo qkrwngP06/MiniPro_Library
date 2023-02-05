@@ -152,4 +152,67 @@ public class NoticeDAO {
 		return notice;
 	}
 
+	/**
+	 * 공지사항 등록 DAO
+	 * @param conn
+	 * @param notice
+	 * @return result
+	 */
+	public int insertNotice(Connection conn, Notice notice) {
+		String query = "INSERT INTO NOTICE_TBL VALUES(SEQ_NOTICENO.NEXTVAL,?,?,?,DEFAULT, DEFAULT)";
+		int result = 0;
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, notice.getNoticeSubject());
+			pstmt.setString(2, notice.getNoticeContent());
+			pstmt.setString(3, "admin");
+			result = pstmt.executeUpdate();
+			pstmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	/**
+	 * 공지사항 정보수정 DAO
+	 * @param conn
+	 * @param notice
+	 * @return result
+	 */
+	public int updateNotice(Connection conn, Notice notice) {
+		String query = "UPDATE NOTICE_TBL SET NOTICE_SUBJECT=?, NOTICE_CONTENT=? WHERE NOTICE_NO=?";
+		int result = 0;
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, notice.getNoticeSubject());
+			pstmt.setString(2, notice.getNoticeContent());
+			pstmt.setInt(3, notice.getNoticeNo());
+			result = pstmt.executeUpdate();
+			pstmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	/**
+	 * 공지사항 삭제 DAO
+	 * @param conn
+	 * @param noticeNo
+	 * @return result
+	 */
+	public int deleteNotice(Connection conn, int noticeNo) {
+		String query = "DELETE FROM NOTICE_TBL WHERE NOTICE_NO = ?";
+		int result = 0;
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, noticeNo);
+			result = pstmt.executeUpdate();
+			pstmt.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
 }

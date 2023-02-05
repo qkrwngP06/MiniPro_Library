@@ -126,6 +126,20 @@ li {
 .border-remove{
 	border : 0 solid black;
 }
+/* .btn-area {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-area > input {
+    margin-top: 8px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 1px #ccc;
+} */
 /*===================footer================*/
 #footer .info {
     /* height: 80px; */

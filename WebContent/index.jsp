@@ -267,24 +267,24 @@
                                 <div class="cont" data-tab="tab1">
                                     <ul>
                                         <li>
-                                            <a href="#">[교육문화강좌]2023년 겨울방학특강 운영안내</a>
-                                            <span>2023-01-20</span>
+                                            <a href="#"></a>
+                                            <span></span>
                                         </li>
                                         <li>
-                                            <a href="#">2023년 <한국 수어의 날 기념 수어 체험 행사>안내</a>
-                                            <span>2023-01-20</span>
+                                            <a href="#"></a>
+                                            <span></span>
                                         </li>
                                         <li>
-                                            <a href="#">2023년 희망도서 서비스 운영 안내</a>
-                                            <span>2023-01-02</span>
+                                            <a href="#"></a>
+                                            <span></span>
                                         </li>
                                         <li>
-                                            <a href="#">2022년 12월 어린이자료실 독서왕 선정</a>
-                                            <span>2022-12-30</span>
+                                            <a href="#"></a>
+                                            <span></span>
                                         </li>
                                         <li>
-                                            <a href="#">2022년 12월 종합자료실 독서왕 선정</a>
-                                            <span>2022-12-30</span>
+                                            <a href="#"></a>
+                                            <span></span>
                                         </li>
                                     </ul>
                                 </div>
